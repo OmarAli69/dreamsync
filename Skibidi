@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Sync - Control Your Dreams</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #1c003d, #3c1c6e);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .subheading {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .feature {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .cta {
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      font-weight: bold;
+    }
+
+    .pillow-img {
+      max-width: 300px;
+      margin: 2rem auto;
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .contact {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 500px;
+      border-radius: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      width: 90%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 0.5rem;
+    }
+
+    .contact button {
+      background-color: #ffd700;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #e6c200;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Control Your Dreams. Escape Reality.</h1>
+    <h2 class="subheading">When you sleep it's full of your imagination</h2>
+    <img src="/mnt/data/c2cb10fc-be67-48a3-baaf-15fde127f40c.png" alt="Dream Sync Pillow and App" class="pillow-img">
+    <p class="cta">Dream Sync - AI Powered Lucid Dreaming</p>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🧠 AI Dream Control</h3>
+      <p>Use advanced AI to shape your dream experience with precision.</p>
+    </div>
+    <div class="feature">
+      <h3>👥 Multiplayer Dreaming</h3>
+      <p>Connect and explore dreams with your friends in real-time.</p>
+    </div>
+    <div class="feature">
+      <h3>🎥 Dream Recorder</h3>
+      <p>Record your dreams and play them back whenever you want.</p>
+    </div>
+    <div class="feature">
+      <h3>🔮 Sleep Tracker</h3>
+      <p>Track your sleep patterns to meet your personal goals.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out!');">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Tested by expert neuroscientists at the Omar Ali Sleep Institute. Trusted by thousands of users.</p>
+    <p>Hotline: 19019 | Website: <a href="https://www.dreamsync.com" style="color: #ffd700;">www.dreamsync.com</a></p>
+  </footer>
+</body>
+
+</html>
